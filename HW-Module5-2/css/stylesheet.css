@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+font-family: helveticaneuecyrlight, Tahoma, san-serif;
+}
+.site {
+	width: 100%;
+	padding-top: 5%;
+}
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+td, tr {
+	border: 5px black solid;
+}
+td {
+	padding: 30px;
+}
+#b6 {
+	border-bottom-color: transparent;
+}
+.tr {
+	border-bottom-color: transparent;
+}
+.yellow {
+	background-color: yellow;
+}
+.red {
+	background-color: red;
+}
+#black {
+	background-color: black;
+}
+.black {
+	background-color: black;
+}
+.blue {
+	background-color: darkblue;
+}
+#h2 {
+	border-bottom-color: transparent;
+	border-right-color: transparent;	
+}
+#h3 {
+	border-bottom-color: transparent;	
+}
+#i2 {
+	border-right-color: transparent;	
+}
+.i4 {
+	border-right-color: transparent;
+	padding-top: 0;	
+}
+.hm {
+	padding-top: 0;
+}
