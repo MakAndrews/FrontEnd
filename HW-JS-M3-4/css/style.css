@@ -1,0 +1,10 @@
+*{
+margin: 0;
+padding: 0;
+}
+.BodyClass {
+	display: block;
+	background-color: red;
+	margin: auto auto;
+	margin-top: 200px;
+}
