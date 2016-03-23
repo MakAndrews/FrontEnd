@@ -8,37 +8,36 @@ ElemDivBody.classList.add('BodyClass');
 var ElemOrderedList = document.createElement('ol');
 ElemOrderedList.classList.add('ListClass');
 
-var List = document.createElement('li');
-var i = 1;
-List.innerHTML = 'Вопрос №' + i;
-
-var CB = document.createElement('input');
-CB.setAttribute('type', 'checkbox');
-CB.setAttribute('value', 'Checkbox_');
-
-var Text = document.createElement('span');
-Text.innerHTML = 'Вариант ответа №' + i, '<br>';
-Text.classList.add('ListClass');
-
-var P = document.createElement('p');
-
-var Button1 = document.createElement('input');
-Button1.setAttribute('type', 'submit');
-Button1.setAttribute('value', 'Отправить ответы');
-Button1.classList.add('ButtonClass');
-
-//
-
 document.body.appendChild(ElemDivHead);
 document.body.appendChild(ElemDivBody);
 ElemDivBody.appendChild(ElemOrderedList);
-List.appendChild(P);
-//ElemOrderedList.appendChild(List)
 
-do {ElemOrderedList.appendChild(List); i++;} while (i<=3);
-i=1;
-do {List.appendChild(CB); i++;} while (i<=3);
+var k = 1;
 
-List.appendChild(Text);
+for (i=1; i<=3; i++) {
+	var List = document.createElement('li');
+	List.innerHTML = 'Вопрос №' + i;
+	ElemOrderedList.appendChild(List);
+	for (j=1; j<=3; j++) {
+		var CB = document.createElement('input');
+		CB.setAttribute('type', 'checkbox');
+		CB.setAttribute('id', 'checkbox' + k);
+		CB.classList.add('BoxClass');
+		var P = document.createElement('p');
+		var Text1 = document.createElement('label');
+		Text1.setAttribute('for', 'checkbox' + k);
+		Text1.innerHTML = 'Вариант ответа №' + j;
+		Text1.classList.add('ListClass2');
+		List.appendChild(P);
+		List.appendChild(CB);
+		List.appendChild(Text1);
+		k++;
+	};
+}
+
+var Button1 = document.createElement('input');
+Button1.setAttribute('type', 'submit');
+Button1.setAttribute('value', 'Проверить мои результаты');
+Button1.classList.add('ButtonClass');
 
 document.body.appendChild(Button1);
