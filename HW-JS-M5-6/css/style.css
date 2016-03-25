@@ -1,0 +1,78 @@
+@font-face {
+    font-family: helveticaneuecyrlight;
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: helveticaneuecyrlight, Tahoma, san-serif;
+}
+.context {
+	width: 250px;
+	border: 2px solid gray;
+	background-color: pink;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.counter {
+	display: block;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+.c1 {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+}
+.c2 {
+	position: absolute;
+	top: 10px;
+	left: 110px;
+}
+.c3 {
+	position: absolute;
+	top: 10px;
+	left: 160px;
+}
+.buttonAct {
+	display: inline-block;
+	padding: 5px 10px;
+	color: white;
+	font-size: 20px;
+	border: 1px solid gray;
+	margin: 15px 0 15px 0;
+	background-color: pink;/*salmon;*/
+	width: 70px;
+}
+.buttonAct:active {
+	outline: 1px solid gray;
+}
+.buttonAct:hover {
+	cursor: pointer;
+}
+.headerElem {
+	display: inline-block;
+	margin: auto;
+	color: white;
+	padding-top: 15px;
+	padding-right: 5px;
+	margin-left: 10px;
+}
+.msCount {
+	display: block;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 4px;
+	margin-bottom: -5px;
+	color: white;
+}

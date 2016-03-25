@@ -41,3 +41,5 @@ Button1.setAttribute('value', 'Проверить мои результаты');
 Button1.classList.add('ButtonClass');
 
 document.body.appendChild(Button1);
+
+//console.log(this.CB.getAttribute('checked'));
