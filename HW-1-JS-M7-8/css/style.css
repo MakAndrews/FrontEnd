@@ -1,0 +1,32 @@
+@font-face {
+    font-family: helveticaneuecyrlight;
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: helveticaneuecyrlight, Tahoma, san-serif;
+}
+body {
+	padding: 20px;
+}
+span {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 120px;
+}
+.tip {
+	font-size: 10px;
+	border: 1px solid gray;
+	background-color: #eee;
+	padding: 1px;
+	text-align: center;
+	border-radius: 5px;
+	display: none;
+}
