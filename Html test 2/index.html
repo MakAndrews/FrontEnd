@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jCarousel, animate background, slideDown-menu, customs checkbox & selectors</title>
+	<link rel="stylesheet" href="css\style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/jquery.color-2.1.0.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css" />
+	<script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+	<script type="text/javascript" src="js/jquery-checkbox.js"></script>
+</head>
+<body>
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/pantera-1-big.jpg" width="300" height="200" alt=""></li>
+				<li><img src="img/pantera-2-big.jpg" width="300" height="200" alt=""></li>
+				<li><img src="img/pantera-3-big.jpg" width="300" height="200" alt=""></li>
+			</ul>
+		</div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>                
+                <p class="jcarousel-pagination"></p>
+	</div>
+<div class="mainMenu">
+	<ul>
+		<li>Меню 1</li>
+		<li>Меню 2</li>
+		<li class="subMenu">Меню 3  &#9660;
+			<ul>
+				<li>Проект 1</li>
+				<li class="subMenu1">Проект 2 &#9658;
+					<ul>
+						<li>Под-Проект 1</li>
+						<li class="subMenu1">Под-Проект 2 &#9658;
+							<ul>
+								<li>Под-Проект 2-1</li>
+								<li>Под-Проект 2-2</li>
+								<li>Под-Проект 2-3</li>
+							</ul>
+						</li>
+						<li>Под-Проект 3</li>
+					</ul>
+				</li>
+				<li>Проект 3</li>
+			</ul>
+		</li>
+		<li>Меню 4</li>
+	</ul>
+</div>
+
+<select>
+	<option>Вариант 1</option>
+	<option>Вариант 2</option>
+	<option>Вариант 3</option>
+	<option>Вариант 4</option>
+	<option>Вариант 5</option>
+	<option>Вариант 6</option>
+	<option>Вариант 7</option>
+	<option>Вариант 8</option>
+	<option>Вариант 9</option>
+	<option>Вариант 10</option>
+</select>
+
+<br>
+<br>
+<span class="niceCheck"><input type="checkbox" name="ch1" />Выбор-1</span>
+<br>
+<span class="niceCheck"><input type="checkbox" name="ch1" />Выбор-2</span>
+
+</body>
+	<script src="js/script10.js"></script>
+</html>
