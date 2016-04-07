@@ -19,6 +19,7 @@ body {
 	margin: 10px auto;
 	background-color: #ffa;
 	transition: 0.5s;
+	overflow: hidden;
 }
 div {
 	border: 1px solid black;
