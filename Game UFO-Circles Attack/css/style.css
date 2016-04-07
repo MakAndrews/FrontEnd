@@ -28,7 +28,7 @@ div {
 	text-align: center;
 	line-height: 25px;
 	background-color: skyblue;
-	transition: 0.5s;
+	transition: 1s;
 }
 div:active {
 	background-color: red;

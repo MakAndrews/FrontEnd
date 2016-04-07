@@ -1,8 +1,8 @@
 $(function() {
 	
 	var maxBots = prompt('Enter the number of Bots(>20 recommended)... And Good Luck!!!');
-	var createBotRate = 2000;
-	var moveInterval = 200;
+	var createBotRate = 1000;
+	var moveInterval = 700;
 	var myHits = 0;
 	var attackInterval = 2000;
 
@@ -21,8 +21,8 @@ $(function() {
 	
 	function moving() {
 		for (i=1; i<=botSum; i++) {
-		var x = getRandom(-50,51);
-		var y = getRandom(-35,36);
+		var x = getRandom(-85,86);
+		var y = getRandom(-85,86);
 		$('.bot'+i).css({
 				'left': parseInt($('.bot'+i).css('left'))+x+'px',
 				'top': parseInt($('.bot'+i).css('top'))+y+'px'
@@ -94,7 +94,7 @@ $(function() {
 				
 				
 			if (botSum == maxBots) {clearInterval(gb);}
-			return $('.bot'+botSum).click(function() {
+			return $('.bot'+botSum).one('click',function() {
 				this.remove();
 				removed++;
 				hited++; 
