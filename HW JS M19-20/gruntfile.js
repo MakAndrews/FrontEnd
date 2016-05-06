@@ -32,6 +32,11 @@ module.exports = function(grunt) {
       // We watch and compile sass files as normal but don't live reload here
       files: ['css/src/style.scss'],
       tasks: ['sass','concat','uglify'],
+    },
+    scripts: {
+      // We watch and compile sass files as normal but don't live reload here
+      files: ['js/src/script.js'],
+      tasks: ['concat','uglify'],
     }
    }
 

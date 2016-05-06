@@ -1,24 +1,414 @@
-@font-face {
-    font-family: 'ubuntuC';
-    src: url('../fonts/ubuntu-c-webfont.eot');
-    src: url('../fonts/ubuntu-c-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubuntu-c-webfont.woff2') format('woff2'),
-         url('../fonts/ubuntu-c-webfont.woff') format('woff'),
-         url('../fonts/ubuntu-c-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ubuntuM';
-    src: url('../fonts/ubuntu-m-webfont.eot');
-    src: url('../fonts/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
-         url('../fonts/ubuntu-m-webfont.woff') format('woff'),
-         url('../fonts/ubuntu-m-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+$secondaryWidth: 1165px;
+$blockMargin: 30px auto;
+$blueLinkColor: #0187f4;
+
+@import "fonts";
+
 *{
   margin: 0;
   padding: 0;
+}
+.separator {
+  clear: both;
+  height: 0px;
+  width: 100%;
+}
+.main {
+  width: 100%;
+  margin: auto;
+}
+header {
+  margin: $blockMargin;
+  width: $secondaryWidth;
+  .logoImg {
+    float: left;
+  }
+  .header__Socials {
+//    background: url(../img/socials.png) no-repeat;
+    float: right;
+    width: 145px;
+    height: 16px;
+    margin-top: 15px;
+    .socials__Facebook {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      float: left;
+      display: inline-block;
+      background: url(../img/socials1.png) 0 0 no-repeat;
+    }
+    .socials__Facebook:hover {
+      background: url(../img/socials1.png) 0 -16px no-repeat;
+    }
+    .socials__Twitter {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+      float: left;
+      display: inline-block;
+      background: url(../img/socials1.png) -16px 0 no-repeat;
+    }
+    .socials__Twitter:hover {
+      background: url(../img/socials1.png) -16px -16px no-repeat;
+    }
+    .socials__RSS {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+      float: left;
+      display: inline-block;
+      background: url(../img/socials1.png) -32px 0 no-repeat;
+    }
+    .socials__RSS:hover {
+      background: url(../img/socials1.png) -32px -17px no-repeat;
+    }
+    .socials__LinkedIn {
+      width: 16px;
+      height: 15px;
+      margin-right: 15px;
+      float: left;
+      display: inline-block;
+      background: url(../img/socials1.png) -49px 0 no-repeat;
+    }
+    .socials__LinkedIn:hover {
+      background: url(../img/socials1.png) -49px -16px no-repeat;
+    }
+    .socials__Skype {
+      width: 15px;
+      height: 15px;
+      float: left;
+      display: inline-block;
+      background: url(../img/socials1.png) -65px 0 no-repeat;
+    }
+    .socials__Skype:hover {
+      background: url(../img/socials1.png) -65px -17px no-repeat;
+    }
+  }
+}
+menu {
+  margin: $blockMargin;
+  width: $secondaryWidth;
+  background-color: rgb(42, 45, 50);
+  .menu__Button {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: ubuntuC;
+    line-height: 55px;
+    border-right: 1px solid black;
+    display: block;
+    width: 115px;
+    height: 55px;
+    float: left;
+    }
+    .menu__Button:hover {
+      color: #f4b60d;
+    }
+  .blueBg {
+    background-color: #248cec;
+  }
+  .menu__Search {
+    display: block;
+    float: right;
+    width: 240px;
+    height: 37px;
+    margin: 7px 10px 6px 0;
+    background-color: #35383c;
+    color: white;
+    border: 1px solid black;
+  }
+  .menu__Search[placeholder] {
+    background: url(../img/zoom.png) no-repeat;
+    background-position: 97% 50%;
+    text-indent: 5px;
+  }
+}
+.slider {
+  margin: auto;
+  width: 1161px;
+  height: 470px;
+  overflow: hidden;
+  .line {
+    height: 471px;
+    width: 3483px;
+    transition: 1s;
+    position: relative;
+    img {
+      float: left;
+      display: block;
+    }
+  }
+  .controls {
+    position: absolute;
+    top: 62%;
+    left: 48.5%;
+    img {
+      margin-right: 10px;
+      float: left;
+      cursor: pointer;
+    }
+  }
+}
+.about {
+  .about__El {
+    width: 381px;
+    margin: 0 3px 0 3px;
+    float: left;
+    .content__Top {
+      font-family: ubuntuM;
+      font-size: 20px;
+      display: block;
+      margin: 10px 0 10px 0;
+    }
+    .content__Center {
+      font-family: Arial;
+      font-size: 13px;
+      color: #8a8a8a;
+    }
+    .content__Bottom {
+      margin-top: 15px;
+      font-family: ubuntuM;
+      font-size: 13px;
+      font-weight: bold;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  margin: $blockMargin;
+  .el__Digit {
+    font-size: 90px;
+    font-family: ubuntuM;
+    color: #efeff0;
+    float: left;
+    line-height: 65px;
+    height: 180px;
+    margin-right: 10px;
+  }
+}
+.services {
+  height: 500px;
+  width: 100%;
+  background-color: #2a2d32;
+  margin-top: 30px;
+  .services__Container {
+    width: 1200px;
+    margin: auto;
+  }
+  .services__El_Header {
+    color: white;
+    font-size: 24px;
+    font-family: ubuntuM;
+    display: block;
+    line-height: 120px;
+    margin-left: 20px;
+  }
+  .services__El {
+    width: 260px;
+    float: left;
+    margin: 20px;
+    a {
+      text-align: center;
+      font-family: ubuntuM;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.news {
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 450px;
+  .newsContainer {
+    width: $secondaryWidth;
+    margin: auto;
+  };
+  .news__Latest {
+    width: 560px;
+    float: left;
+    .latest__El {
+      margin-bottom: 30px;
+      height: 150px;
+      img {
+        margin-left: -15px;
+        float: left;
+        margin-right: 20px;
+      };
+      .el__Content {
+        max-height: 150px;
+        .content__Topic {
+          font-family: ubuntuM;
+          font-size: 16px;
+          text-decoration: none;
+          color: black;
+          display: block;
+          padding-right: 20px;
+          margin-bottom: 5px;
+        };
+        .content__Topic:hover {
+          color: $blueLinkColor;
+        }
+        .content__Comments {
+          font-family: Arial;
+          font-size: 13px;
+          padding-right: 20px;
+          color: #8a8a8a;
+          .blueLinkMod {
+            color: $blueLinkColor;
+            text-decoration: none;
+          };
+        }
+        .content__Text {
+          display: block;
+          margin-top: 5px;
+          color: #8a8a8a;
+          font-family: Arial;
+          font-size: 13px;
+          padding-right: 20px;
+        };
+      };
+  };
+  }
+}
+.latest__Topic {
+  display: block;
+  margin-top: 5px;
+  line-height: 80px;
+  font-family: ubuntuM;
+  font-size: 24px;
+};
+.news__Banners {
+  float: left;
+  margin-left: 20px;
+  .banners__Container {
+    width: 580px;
+    height: 320px;
+  }
+  .container__Banner {
+    height: 38px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+  }
+  .banner__Panel {
+    cursor: pointer;
+  }
+  .panel__Marker {
+    float: left;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+  }
+  .panel__Name {
+    float: left;
+    width: 528px;
+    height: 36px;
+    font-family: ubuntuM;
+    font-size: 13px;
+    line-height: 36px;
+    padding-left: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+  }
+  .banner__Text {
+    width: 504px;
+    height: 148px;
+    font-family: Arial;
+    font-size: 13px;
+    color: #8a8a8a;
+    padding: 38px;
+    overflow: hidden;
+    display: none;
+  }
+}
+#brands {
+  display: block;
+  margin: 30px auto;
+}
+footer {
+  width: 100%;
+  .footer__Menu {
+    width: 100%;
+    height: 320px;
+    background-color: #2a2d32;
+  }
+  .menu__Container {
+    height: 320px;
+    width: $secondaryWidth;
+    margin: 50px auto;
+  }
+  .container__Block {
+    display: inline-block;
+    color: white;
+    font-family: ubuntuM;
+    font-size: 16px;
+    width: 255px;
+    span {
+      display: block;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    a {
+      display: block;
+      width: 255px;
+      padding: 8px 2px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.3);
+      font-family: Arial;
+      font-size: 13px;
+    }
+    a:hover {
+      color: $blueLinkColor;
+    }
+    .block__underline {
+      border-bottom: 1px solid #393c40;
+    }
+  }
+  .block_MarginRight40 {
+    margin-right: 40px;
+  }
+  .footer__Bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #35383c;
+  }
+  .bottom__Container {
+    height: 50px;
+    width: $secondaryWidth;
+    margin: auto;
+  }
+  .container__Info {
+    font-family: Arial;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    float: left;
+    margin-right: 30px;
+    line-height: 50px;
+    padding-left: 17px;
+  }
+  .info__Location {
+    background: url(../img/location1.png) no-repeat;
+    background-position: 0% 45%;
+  }
+  .info__Phone {
+    background: url(../img/iphone.png) no-repeat;
+    background-position: 0% 45%;
+  }
+  .info__Mail {
+    background: url(../img/mail1.png) no-repeat;
+    background-position: 0% 45%;
+    padding-left: 23px;
+  }
+  .container__Copy {
+    font-family: Arial;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    float: right;
+    line-height: 50px;
+  }
 }
