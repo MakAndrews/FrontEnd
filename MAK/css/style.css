@@ -1,0 +1,264 @@
+@font-face {
+    font-family: helveticaneuecyrlight;
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helveticaneuecyrlight;
+}
+body {
+  width: 100%;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  margin-top: 5px;
+}
+header {
+  margin: auto;
+  width: 1000px;
+  height: 30px;
+  text-align: left;
+  line-height: 30px;
+}
+.title {
+  margin-left: 5px;
+}
+header span {
+  height: 30px;
+  font-size: 24px;
+  color: #1e6482;
+  font-weight: bolder;
+}
+.orange {
+  color: #bf6801;
+}
+.blue {
+  color: #1e6482;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+header ul li {
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 5px;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+header ul li a {
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: #bf6801;
+  cursor: pointer;
+}
+.separator {
+  width: 100%;
+  float: left;
+  height: 1px;
+  clear: both;
+}
+}
+.main__wrapper {
+  width: 1000px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.main__text {
+  display: inline-block;
+  padding-left: 10px;
+  width: 480px;
+  margin-top: 10px;
+}
+.main__text span {
+  font-size: 14px;
+}
+.main__imgHolder {
+  display: inline-block;
+  padding-left: 40px;
+  background: url('../img/about.png') no-repeat;
+  background-position: center;
+  width: 440px;
+  height: 173px;
+}
+.video__wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 1001px;
+  height: 243px;
+  text-align: center;
+  background: url('../img/MAK3.jpg') no-repeat;
+  margin: 5px auto 5px auto;
+}
+.video {
+  width: 1001px;
+  margin-top: -100px;
+}
+.video__text {
+  position: absolute;
+  top: 50px;
+  left: 140px;
+  font-size: 45px;
+}
+.video__text span {
+  font-size: 45px;
+}
+.marginTop10 {
+  margin-top: 10px;
+  display: block;
+}
+.marginLeft30px {
+  margin-left: 30px;
+}
+main {
+  width: 1000px;
+  max-width: 1000px;
+  margin: auto;
+}
+.main__sliderHolder {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.sliderHolder__Roller {
+  display: inline-block;
+  width: 2000px;
+  height: 200px;
+  transition: 1s;
+}
+.ourProjects__Text {
+  display: inline-block;
+  padding-left: 90px;
+  padding-top: 5px;
+  width: 380px;
+  height: 200px;
+}
+.fontSize14 {
+  font-size: 14px;
+  display: block;
+  margin-top: 7px;
+}
+.order__form {
+  margin: 20px auto;
+  width: 980px;
+}
+.order {
+  display: block;
+  margin-bottom: 15px;
+}
+.form {
+  max-width: 990px;
+  max-height: 65px;
+  margin: 0 auto;
+  margin-right: 5px;
+}
+.mailArea {
+  width: 990px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.textArea {
+  width: 990px;
+  height: 65px;
+  max-width: 990px;
+  max-height: 65px;
+  margin-right: 5px;
+}
+.inputButton {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #1e6482;
+  font-weight: 100;
+  border-color: white;
+  background-color: white;
+  padding: 3px;
+}
+.contactsTitle {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+.projects__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+.contacts {
+  width: 1000px;
+  margin: 90px auto 10px auto;
+}
+.links {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 20px;
+}
+.vk {
+  background: url('../img/socials-icons1.png') 0 -51px no-repeat;
+}
+.vk:hover {
+  background: url('../img/socials-icons1.png') 0 0 no-repeat;
+}
+.facebook {
+  background: url('../img/socials-icons1.png') -50px -51px no-repeat;
+}
+.facebook:hover {
+  background: url('../img/socials-icons1.png') -50px 0 no-repeat;
+}
+.ok {
+  background: url('../img/socials-icons1.png') -100px -51px no-repeat;
+}
+.ok:hover {
+  background: url('../img/socials-icons1.png') -100px 0 no-repeat;
+}
+.mail {
+  background: url('../img/socials-icons1.png') -150px -51px no-repeat;
+}
+.mail:hover {
+  background: url('../img/socials-icons1.png') -150px 0 no-repeat;
+}
+.skype {
+  background: url('../img/socials-icons1.png') -200px -51px no-repeat;
+}
+.skype:hover {
+  background: url('../img/socials-icons1.png') -200px 0 no-repeat;
+}
+.links__wrapper {
+  width: 1000px;
+  max-width: 99vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+footer {
+  width: 1000px;
+  height: 20px;
+  margin: auto;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

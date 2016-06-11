@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MAK: Web Development</title>
+	<link rel="stylesheet" media="screen and (min-device-width: 481px)" href="css\style.css">
+	<link rel="stylesheet" media="screen and (max-device-width: 480px)" href="css\small.css" />
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <span class="title left">MAK</span><span class="orange left">:STUDIO</span>
+			<ul class="right">
+				<li><a class="blue" href="#about">About</a></li>
+				<li><a class="blue" href="#projects">Project Examples</a></li>
+				<li><a class="blue" href="#order">Order Form</a></li>
+				<li><a class="blue" href="#contacts">Contacts</a></li>
+			</ul>
+			<div class="video__wrapper left">
+				<video class="video" autoplay loop>
+					<source src="video/movie1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					<source src="video/movie1.webm" type='video/webm; codecs="vp8, vorbis"' />
+					<source src="video/movie1.ogv" type='video/ogg; codecs="theora, vorbis"' />
+				</video>
+				<div class="video__text blue">
+					<span class="blue">WEB DEVELOPMENT</span>
+					<span class="orange">IS A PASSION</span>
+				</div>
+			</div>
+    </header>
+		<main>
+			<div class="main__wrapper about__wrapper">
+				<div class="main__text blue">
+					<h3><a name="about">About</a></h3><br>
+					<span>My name is Andrey Miroshnichenko and I'm glad to introduce myself & my partners - team of young and ambitious Frontend, Backend developers & JS programmers, that makes real any ideas of Web projects. Key technologies in use: HTML5, CSS3, JavaScript, PHP. Libraries & Frameworks, etc.: jQuery, Lodash, Bootstrap, Pure, SASS/SCSS, Grunt, Gulp, Pixel Perfect. Methodologies: BEM, Agile/Scrum, PMBoK. CMS priority: WordPress. We can do our job from anywhere and anytime,
+						even when you're going to see a dream.</span>
+					<span class="marginTop10"><p>Make an <a href="#order">Order Online</a> and see how a price makes you happy.</p></span>
+				</div>
+				<div class="main__imgHolder">
+				</div>
+			</div>
+			<div class="main__wrapper marginLeft30px projects__wrapper">
+				<div class="main__sliderHolder">
+					<div class="sliderHolder__Roller">
+						<img src="img/example1.jpg" alt="Example 1" /><img src="img/example2.jpg" alt="Example 2" /><img src="img/example3.jpg" alt="Example 3" /><img src="img/example4.jpg" alt="Example 4" /><img src="img/example5.jpg" alt="Example 5" />
+					</div>
+				</div>
+				<div class="main__text blue ourProjects__Text">
+					<h3><a name="projects">Project Examples</a></h3><br>
+					<span>You can find here some examples of work.</span>
+					<p class="fontSize14">
+						Example 1: Complex coroporate web-site with full stack of technologies used.
+					</p>
+					<p class="fontSize14">
+						Example 2: JavaScript/jQuery browser game with latest innovations of HTML5 & CSS3.
+					</p>
+					<p class="fontSize14">
+						Example 3: Search Engine with AJAX.
+					</p>
+					<p class="fontSize14">
+						Example 4: Web "Test" with localStorage, JSON techs.
+					</p>
+					<p class="fontSize14">
+						Example 5: JS Game coding in progress...
+					</p>
+				</div>
+			</div>
+			<div class="main__wrapper order__form blue">
+				<h3><a class="order" name="order">Order Form</a></h3>
+				<span class="fontSize14">You can calculate the development with application form. If you finally made a decision what you need - fill in the text form below with short discription (up to 1000 symbols) of your Project. After that we'll shortly give you an answer: how much time and money it will take</span>
+				<br>
+				<form class="form left" action="php/send.php" method="post">
+					<input required type="email" class="mailArea" name="name__mailArea" rows="1" cols="1" maxlength="100" placeholder="Enter e-mail here...">
+					<textarea required class="textArea" name="name__textArea" rows="1" cols="4" maxlength="1000" placeholder="Enter short discription of your web project here..."></textarea>
+					<input class="inputButton" type="submit" name="submit" value="Send request">
+				</form>
+				</div>
+				<div class="main__wrapper order__form blue contacts">
+					<br>
+					<br>
+					<div class="links__wrapper">
+						<a name="contacts"><span class="fontSize14">Contacts: if you have any questions, please connect with links below:</span></a>
+						<br>
+						<a class="links vk" target="_blank" href="http://vk.com/makandrews"></a>
+						<a class="links facebook" target="_blank" href="https://www.facebook.com/andrew.miroshnichenko.7"></a>
+						<a class="links ok" target="_blank" href="https://ok.ru/profile/86044706281"></a>
+						<a class="links mail" target="_blank" href="mailto:7853637@gmail.com"></a>
+						<a class="links skype" target="_blank" href="skype:mak.andrews?chat"></a>
+					</div>
+				</div>
+			</main>
+			<footer class="blue">
+				Copyright &copy 2016 MAK. All Rights Reserved.
+			</footer>
+		</div>
+  </div>
+</body>
+	<script src="js/script.js"></script>
+</html>

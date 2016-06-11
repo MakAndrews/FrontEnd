@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="css\style.css">
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script data-main="js/app" src="js/require.js"></script>
+	<script src="js/template.js"></script>
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<ul class="list">
+				<li>fff</li>
+			</ul>
+			<div class="controls">
+				<input class="item-value" type="text" name="name" value="">
+				<button class="item-add">Add</button>
+			</div>
+		</div>
+	</script>
+	<script type="text/template" id="list-template">
+			<% for (var i=0; i<data.lenght; i++) { %>
+				<li><%= data[i] %> <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+			<% }; %>
+	</script>
+</body>
+	<script src="js\script.js"></script>
+</html>
