@@ -1,0 +1,63 @@
+/*MAIN SETTINGS*/
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensanslight-webfont.eot');
+    src: url('../fonts/opensanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensanslight-webfont.woff2') format('woff2'),
+         url('../fonts/opensanslight-webfont.woff') format('woff'),
+         url('../fonts/opensanslight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*MODIFICATORS*/
+.leagueGothic {
+	font-family: 'league_gothicregular';
+}
+.openSans {
+	font-family: 'open_sanslight';
+}
+.fontColorWhite {
+	color: #ffffff;
+}
+.fontColorPink {
+	color: #edbfff;
+}
+.fontColorDarkGray {
+	color: #454545;
+}
+.fontColorLightGray {
+	color: #787878;
+}
+/*BLOCKS*/
+header {
+	background: url(../img/bg-top.jpg) no-repeat;
+	background-position: top;
+	background-color: #a799ac;
+	width: 100%;
+	min-width: 960px;					/*КОРРЕКТИРОВКА ПО РАЗМЕРАМ*/
+	height: 846px;						/*КОРРЕКТИРОВКА ПО РАЗМЕРАМ*/
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+
+/*ELEMENTS*/
+.header__top {
+	margin: auto;
+	width: 960px;						/*КОРРЕКТИРОВКА ПО РАЗМЕРАМ*/
+	height: 277px;						/*КОРРЕКТИРОВКА ПО РАЗМЕРАМ*/
+}
